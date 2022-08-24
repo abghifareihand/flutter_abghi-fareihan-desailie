@@ -97,7 +97,7 @@ Contoh gambar di bawah ini, terjadinya conflict karena di branch featureB yang t
 ![Test](screenshots/screenshot_conflict.png)
 
 
-Cara mengatasinya yaitu dengan memilih salah satu oerubahan yang nantinya akan dipakai setelah itu di ``git add .`` lalu ``commit -m "fix conflict"`` dan setelah itu di push.
+Cara mengatasinya yaitu dengan memilih salah satu oerubahan yang nantinya akan dipakai setelah itu di ``git add .`` lalu ``git commit -m "fix conflict"`` dan setelah itu di push.
 
 Disini saya memilih perubahan yang ada pada branch featureB
 
