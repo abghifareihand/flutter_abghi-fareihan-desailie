@@ -72,6 +72,7 @@ Penerapan stash yaitu menyimpan perubahan di penyimpanan stash, lalu mem "apply"
 
 
 Penerapan merge, yg artinya itu menyatukan file atau perubahan
+dan saya juga menerapkan merge ini di branch featureA, kemudian di merge di branch development
 
 ![Test](screenshots/merge_no_ff.png)
 
