@@ -39,9 +39,6 @@ Saya membuat repository github dengan nama "abghifareihand/flutter_abghi-fareiha
 
 
 ### Task 03
-#### Implementasi intruksi git, push, pull, stash
-
-
 
 Penerapan push
 ![Test](screenshots/screenshot_03.png)
