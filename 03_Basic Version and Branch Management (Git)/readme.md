@@ -34,3 +34,13 @@ Saya membuat repository github dengan nama "abghifareihand/flutter_abghi-fareiha
 ### Task 02
 Saya membuat repository github dengan nama "abghifareihand/flutter_abghi-fareihan-desailie" berikut adalah bukti screenshots repository yang sudah saya buat 
 ![Test](screenshots/screenshot_01.png)
+
+
+### Task 03
+####Implementasi intruksi git, push, pull, stash
+
+Penerapan push
+![Test](screenshots/screenshot_03.png)
+
+Penerapan pull
+![Test](screenshots/screenshot_04.png)
