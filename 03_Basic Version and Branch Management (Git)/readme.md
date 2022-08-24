@@ -41,12 +41,14 @@ Saya membuat repository github dengan nama "abghifareihand/flutter_abghi-fareiha
 ### Task 03
 
 Penerapan push
+
 ![Test](screenshots/screenshot_03.png)
 
 
 
 
 Penerapan pull
+
 ![Test](screenshots/screenshot_04.png)
 ![Test](screenshots/screenshot_pull.png)
 ![Test](screenshots/screenshot_pull_2.png)
@@ -62,6 +64,7 @@ Penerapan git, untuk pindah branch
 
 
 Penerapan stash yaitu menyimpan perubahan di penyimpanan stash, lalu mem "apply" atau menaruh perubahan tersebut di branch yg di inginkan
+
 ![Test](screenshots/stash2.png)
 ![Test](screenshots/stash3.png)
 
@@ -69,6 +72,7 @@ Penerapan stash yaitu menyimpan perubahan di penyimpanan stash, lalu mem "apply"
 
 
 Penerapan merge, yg artinya itu menyatukan file atau perubahan
+
 ![Test](screenshots/merge_no_ff.png)
 
 
