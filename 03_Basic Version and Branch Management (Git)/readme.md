@@ -44,3 +44,6 @@ Penerapan push
 
 Penerapan pull
 ![Test](screenshots/screenshot_04.png)
+
+Penerapan git, untuk pindah branch
+![Test](screenshots/screenshot_05.png)
