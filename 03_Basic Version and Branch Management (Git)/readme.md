@@ -26,3 +26,11 @@ Jika penambahan fitur atau perbaikan bug sudah selesai, branch dapat di merge ke
 
 
 ## Task
+
+### Task 01
+Saya membuat repository github dengan nama "abghifareihand/flutter_abghi-fareihan-desailie" berikut adalah bukti screenshots repository yang sudah saya buat 
+![Test](screenshots/screenshot_01.png)
+
+### Task 02
+Saya membuat repository github dengan nama "abghifareihand/flutter_abghi-fareihan-desailie" berikut adalah bukti screenshots repository yang sudah saya buat 
+![Test](screenshots/screenshot_01.png)
