@@ -49,3 +49,19 @@ Penerapan pull
 
 Penerapan git, untuk pindah branch
 ![Test](screenshots/screenshot_05.png)
+
+Penerapan stash yaitu menyimpan perubahan di penyimpanan stash, lalu mem "apply" atau menaruh perubahan tersebut di branch yg di inginkan
+![Test](screenshots/stash2.png)
+![Test](screenshots/stash3.png)
+
+Penerapan merge, yg artinya itu menyatukan file atau perubahan
+![Test](screenshots/merge_no_ff.png)
+
+
+### Task 04
+Penanganan conflict yaitu dengan menghapus perubahan di line yg sama, jadi harus pilih satu perubahan yg akan di pakai agar tidak conflict
+![Test](screenshots/conflict.png)
+
+### Task 05
+Menggunakan merge no fast forward untuk merge branch di featureA dan featureB
+![Test](screenshots/merge_no_ff.png)
