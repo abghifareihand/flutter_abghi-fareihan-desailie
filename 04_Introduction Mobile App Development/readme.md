@@ -14,17 +14,20 @@ Contoh software :
 Web : 
 - Diakses menggunakan web browser
 - Memerlukan internet untuk membukanya
+Contoh : Chrome, Mozila Firefox dll
 
 Dekstop :
 - Berjalan pada perangkat dekstop
 - Umumnya perlu langkah instalasi
-- Dapat dibuka tanpa memerlukan internet
+- Dapat dibuka tanpa memerlukan internet (tidak semua)
+Contoh : Vscode, Android Studio dll
 
 Mobile :
-- Berjlan pad perangkat mobile (smartphone atau tablet)
+- Berjalan pada perangkat mobile (smartphone atau tablet)
 - Umunya perlu langkah instalasi
-- Instalasi dapat dilakukan melalui store penyedia aplikasi
-- Dapat dibuka tanpa memerlukan internet
+- Instalasi dapat dilakukan melalui store penyedia aplikasi, seperti Play Store dan App Store
+- Dapat dibuka tanpa memerlukan internet (tidak semua)
+Contoh : Tokopedia, Shopee dll
 
 #### Pengembangan Software
 Bahasa pemograman merupakan rangkaian text yang digunakan untuk memberi perintah kepada komputer.
