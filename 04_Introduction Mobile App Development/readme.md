@@ -70,3 +70,5 @@ Bahasa pemograman merupakan rangkaian text yang digunakan untuk memberi perintah
 - Aplikasi video call “FaceTime”
 
 
+##### Link google docs : https://bit.ly/3cuTvV4
+
