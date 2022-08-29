@@ -111,9 +111,10 @@ void main() {
 
 #### Task 02
 ##### Buatlah 3 buah variable yang berisi string, lalu sambungkan seluruh string tersebut, dan tampilkan pada layar!
+Saya menggunakan tipe data String pada nama, kampus, asal. Dan saya menggunakan cara inisiasi langsung.
 
 ![Test](screenshots/screenshot_task_2.png)
-Saya menggunakan tipe data String pada nama, kampus, asal. Dan saya menggunakan cara inisiasi langsung.
+
 
 Berikut adalah menggunakan cara lain :
 ```
