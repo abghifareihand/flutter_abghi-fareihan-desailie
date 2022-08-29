@@ -9,15 +9,15 @@ Pada section 5 ini, saya belajar tentang Introduction to Algorithm and Dart Prog
 - Apa itu Dart ? Dart adalah bahasa pemograman yang dirancang untuk membuat aplikasi agar dapat berjalan dengan cepat.
 - Kenapa (harus) Dart? Type safe, Null safety, Rich standart library, dan Multiplatform.
 
-#### Program Dart Sederhana
-##### Fungsi Main
+### Program Dart Sederhana
+Fungsi Main
 - Bagian yang dijalankan pertama kali
 - Dapat memiliki tipe data void atau int
 - Memiliki nama main
-##### Perintah 'print' digunakan untuk menampilkan data ke layar.
+Perintah __print__ digunakan untuk menampilkan data ke layar.
 
 
-#### Variable
+### Variable
 - Digunakan untuk menyimpan data
 - Memiliki nama
 - Memiliki tipe data
@@ -38,13 +38,13 @@ void main() {
 }
 ```
 
-#### Konstanta
+### Konstanta
 - Digunakan untuk menyimpan data
 - Memiliki nama
 - Memiliki tipe data
 - Nilainya tetap (tidak bisa di ubah)
 
-Membuat Kontanta. Menggunakan __final__, diikuti nama dan diberikan nilai secara langsung. Contoh :
+Membuat Konstanta. Menggunakan __final__, diikuti nama dan diberikan nilai secara langsung. Contoh :
 ```
 void main() {
     final usia = 18;
@@ -52,6 +52,49 @@ void main() {
 ```
 Jadi, jika di bawahnya kita mau ubah usia nya itu tidak bisa, karena bersifat final tidak bisa diubah
 
+### Tipe Data
+- Jenis data yang dapat dikelola
+- Tipe data sederhana disebut primitive data type
+
+#### Jenis Tipe Data
+
+##### int = Menggantikan var dengan int data harus bilangan bulat
+```
+void main() {
+    int usia = 21;
+}
+```
+
+##### double = Menggantikan var dengan int data harus bilangan pecahan, penulisan pecahan dengan tanda titik
+```
+void main() {
+    double tinggi = 168.5;
+}
+```
+
+##### bool = Menggantikan var dengan int data harus "true/false"
+```
+void main() {
+    bool pria = true;
+}
+```
+
+##### string = Menggantikan var dengan int data berupa text, penulisan text diawali dan diakhiri tanda kutip
+```
+void main() {
+    String nama = 'Abghi;
+}
+```
+
+### Operator
+- Digunakan untuk operasi pengolahan data
+- Data yang dikelola disebut operand
+
+#### Contoh Operator :
+- Arithmetic
+- Assignment
+- Comparison
+- Logical
 
 
 ## Task
