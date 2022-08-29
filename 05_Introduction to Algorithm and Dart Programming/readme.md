@@ -22,16 +22,16 @@ Pada section 5 ini, saya belajar tentang Introduction to Algorithm and Dart Prog
 - Memiliki nama
 - Memiliki tipe data
 
-##### Deklarsi varibale. Menggunakan var dan diikuti nama variable secara otomatis tipe data varibale tersebut adalah Null. Contoh : 'var usia;'
+Deklarsi varibale. Menggunakan var dan diikuti nama variable secara otomatis tipe data varibale tersebut adalah Null. Contoh : 'var usia;'
 
-##### Memberi nilai pada varibale. Contoh :
+Memberi nilai pada varibale. Contoh :
 ```
 void main() {
     var usia;
     usia = 18;
 }
 ```
-##### Inisiasi Variable. Deklarasi danmemberi nilai variable secara bersamaan. Contoh :
+Inisiasi Variable. Deklarasi danmemberi nilai variable secara bersamaan. Contoh :
 ```
 void main() {
     var usia = 18;
@@ -44,13 +44,15 @@ void main() {
 - Memiliki tipe data
 - Nilainya tetap (tidak bisa di ubah)
 
-##### Membuat Kontanta. Menggunakan __final__, diikuti nama dan diberikan nilai secara langsung. Contoh :
+Membuat Kontanta. Menggunakan __final__, diikuti nama dan diberikan nilai secara langsung. Contoh :
 ```
 void main() {
     final usia = 18;
 }
 ```
 Jadi, jika di bawahnya kita mau ubah usia nya itu tidak bisa, karena bersifat final tidak bisa diubah
+
+
 
 ## Task
 
