@@ -102,6 +102,28 @@ void main() {
 #### Task 01
 ##### Implementasikan rumus luas lingkaran pada program Dart?
 
+![Test](screenshots/screenshot_task_1.png)
+- Pada baris ke 3 mendeklarasikan konstanta __phi__ dengan nilai 'final' 3.14. Artinya phi itu bersifat final tidak bisa di ubah.
+- Pada baris ke 4 mendeklarasikan __jari2__ menggunakan tipe data int karna jari-jari nya nilainya bulat.
+- Pada baris ke 5 mendeklarasikan __luas__ menggunakan tipe data double karna hasil dari luas kemungkinan nilainya pecahan.
+- Pada baris ke 6 menampilkan nilai print dari luas lingkaran tersebut
+
 
 #### Task 02
 ##### Buatlah 3 buah variable yang berisi string, lalu sambungkan seluruh string tersebut, dan tampilkan pada layar!
+
+![Test](screenshots/screenshot_task_2.png)
+Saya menggunakan tipe data String pada nama, kampus, asal. Dan saya menggunakan cara inisiasi langsung.
+
+Berikut adalah menggunakan cara lain :
+```
+void main() {
+  String nama, kampus, asal;
+  nama = 'Abghi';
+  kampus = 'Universitas Nasional';
+  asal = 'Jakarta';
+  print('Halo teman-teman Alterra Academy perkenalkan Nama saya $nama saya sedang kuliah di $kampus, saya berasal dan lahir di $asal.');
+}
+```
+
+
