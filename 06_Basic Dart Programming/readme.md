@@ -94,6 +94,21 @@ void main() {
 - Comparison
 - Logical 
 
+### Anonymous Function
+- Tidak memiliki nama
+- Fungsi sebagai data
+
+### Arrow Function
+- Dapat memiliki nama
+- Berisi 1 data (dari proses maupun data statis)
+- Nilai return fungsi ini diambil dari data tersebut
+
+### Async-Await
+- Menjalankan beberapa proses tanpa perlu menunggu
+- Proses ditulis dalam bentuk fungsi
+- Await akan menunggu hingga proses async selesai
+
+
 
 
 ## Task
