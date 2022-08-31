@@ -1,5 +1,7 @@
 void main() {
   print(nilai(80));
+  print(nilai(50));
+  print(nilai(30));
 }
 
 nilai(int score) {
