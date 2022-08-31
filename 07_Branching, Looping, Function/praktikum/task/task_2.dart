@@ -5,8 +5,8 @@ void main() {
 }
 
 nilaiFaktorial(int angka) {
-  int faktorial = 1;
-  for (int i = 1; i <= angka; i++){
+  double faktorial = 1;
+  for (double i = 1; i <= angka; i++){
       faktorial *= i;
     }
   print('Faktorial dari $angka adalah $faktorial');  
