@@ -5,7 +5,7 @@ Nomor Urut: 1_001FLB_42
 Nama: Abghi Fareihan Desailie
 
 ## Summary
-Pada section 8 ini, saya belajar tentang Advance Function, Async-Await, Tipe Data Future, Collection.
+Pada section 8 ini, saya belajar tentang Advance Function, Async-Await
 
 
 ### Anonymous Function
