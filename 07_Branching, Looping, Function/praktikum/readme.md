@@ -13,7 +13,11 @@ b. jika nilai > 40: return B
 c. jika nilai > 0: return C
 d. selain itu return text kosong
 
+Saya menggunakan standart input/output agar bisa melakukan peng-inputan angka secara dinamis
+
 ![Test](../screenshots/task_7_1.png)
+
+
 
 
 #### Task 02
@@ -21,6 +25,8 @@ Tampilkan nilai faktorial dari:
 a. 10
 b. 20
 c. 30
+
+Saya menggunakan standart input/output agar bisa melakukan peng-inputan angka secara dinamis
 
 ![Test](../screenshots/task_7_2.png)
 
