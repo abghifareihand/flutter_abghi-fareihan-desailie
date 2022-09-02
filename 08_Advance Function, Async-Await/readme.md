@@ -46,6 +46,22 @@ void main () {
 - Menjalankan beberapa proses tanpa perlu menunggu
 - Proses ditulis dalam bentuk fungsi
 - Await akan menunggu hingga proses async selesai
+```
+void p1() {
+  Future.delayed(Duration(seconds: 1), () {
+    print('Hello dari P1');
+  });
+}
+
+void p2() {
+  print('Hello dari P2');
+}
+
+void main() {
+  p1();
+  p2();
+}
+```
 
 
 ### Tipe Data Future
@@ -74,10 +90,31 @@ Collection merupakan kumpulan data pada satu tempat
 
 - List
 Menyimpan data (elemen) secara berbaris, Tiap data memiliki index
-![Test](screenshots/ss_list.png)
+```
+void main(List<String> args) {
+  var scores = [60, 80, 90, 70, 85];
+  print(scores);
+
+  for (var score in scores) {
+    print(score);
+  }
+}
+```
 
 
 
 - Map
 Menyimpan data secara key-value, Key berguna selayaknya index pada list
-![Test](screenshots/ss_map.png)
+```
+void main() {
+  var student = {
+    'name' : 'Alex Jack', 
+    'age' : 16
+  };
+  print(student);
+
+  for (var key in student.keys) {
+    print(student[key]);
+  }
+}
+```
