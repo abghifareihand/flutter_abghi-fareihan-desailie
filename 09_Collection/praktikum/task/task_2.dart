@@ -1,23 +1,35 @@
-
-import 'dart:io';
-
-void main() {
-  List<List> studentDate = [
-    ['NIM', 'Nama', 'Nilai'],
+void main(List<String> args) {
+  var nilai;
+  var jumlah;
+  var rata2;
+  List matrix = [
+    [1, 2, 5 ,4],
+    [2, 4, 3 ,2],
+    [4, 5, 2, 1],
+    [3, 1, 3, 4],
+    [2, 4, 3, 5]
   ];
 
-  List<List> studentList = [
-    ['1001', 'Agus Koswara', '90'],
-    ['1002', 'Bagyo Suhendar', '80'],
-    ['1003', 'Cahya Pambudi', '70']
-  ];
+  for (nilai in matrix) {
+    jumlah = nilai[0] + nilai[1] + nilai[2] + nilai[3]; // mencari jumlah
+    rata2 = jumlah / nilai.length; // mencari rata rata
 
-  Map<String, String> studentMap = {};
+    int min = nilai[0];
+    int max = nilai[0];
 
-  var counter = studentList[0];
-  
-  for (var i = 0; i < counter.length; i++) {
-    studentMap[studentDate[0][i]] = studentList[0][i];
+    for(int i = 0; i < nilai.length; i++) {
+      if (nilai[i] < min) {
+        min = nilai[i]; // mencari nilai max
+      }
+      if (nilai[i] > max) {
+        max = nilai[i]; // mencari nilai min
+      }
+    }
+    print('Jumlah nilai dari baris $nilai adalah $jumlah');
+    print('Rata2 nilai dari baris $nilai adalah $rata2');
+    print('Nilai terbesar dari baris $nilai adalah $max');
+    print('Nilai terkecil dari baris $nilai adalah $min');
+    print('==================================================');
+
   }
-  print(studentMap);
 }
