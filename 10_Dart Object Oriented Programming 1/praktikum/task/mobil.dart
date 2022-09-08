@@ -17,8 +17,6 @@ class Mobil {
     } else {
       print('Muatan melebihi kapasitas mobil karna sisa kapasitas cuman ${kapasitas}kg');
       print('Sedangkan hewan yang ditambahkan yaitu $namaHewan punya kapasitas ${beratHewan}kg');
-    }
-    
+    } 
   }
-
 }
