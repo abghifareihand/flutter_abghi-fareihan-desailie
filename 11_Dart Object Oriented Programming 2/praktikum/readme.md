@@ -18,43 +18,45 @@
 
 ```dart
 class BangunRuang {
-  double panjang, lebar, tinggi; // membuat atribut atau properties
-  BangunRuang(this.panjang, this.lebar, this.tinggi); // membuat cunstructor
+  double panjang, lebar, tinggi; // membuat atribut di class utama
+  BangunRuang(this.panjang, this.lebar, this.tinggi); // membuat constructor
 
-  void volume() {} // membuat method sesuai soal dan akan di akses di setiap class child nya
+  double volume() {
+    return 0;
+  } // membuat method volume() di class utama
 }
 
 class Kubus extends BangunRuang {
-  double sisi; // menambahkan atribut baru untuk kubus
+  double sisi; // menambahkan atribut baru di class Kubus
   Kubus(super.panjang, super.lebar, super.tinggi, this.sisi);
-  // super = mengakses atribut pada kelas parent/utama (induk)
-  //this = mengakses atribut di class tersebut berada
+  // super = memanggil atribut dari class utama
+  // this = memanggil atribut dari class itu sendiri
 
   @override
-  void volume() {
-    var hasil = sisi * sisi * sisi; // menghitung vol kubus dengan atribut sisi
-    print('Volume Kubus dengan sisi ${sisi}cm adalah ${hasil}');
+  double volume() {
+    print('Volume Kubus : ');
+    return sisi * sisi * sisi;
   }
-}
+} // memanggil method dari class utama dan menambahkan rumus
 
 class Balok extends BangunRuang {
   Balok(super.panjang, super.lebar, super.tinggi);
+  // memanggil atribut dari class utama dengan super.
 
   @override
-  void volume() {
-    var hasil = panjang * lebar * tinggi; // menghitung vol kubus dengan atribut panjang, lebar, tinggi
-    print(
-        'Volume Balok dengan panjang ${panjang}cm lebar ${lebar}cm dan tinggi ${tinggi}cm adalah ${hasil}');
+  double volume() {
+    print('Volume Balok : ');
+    return panjang * lebar * tinggi;
   }
-}
+}  // memanggil method dari class utama dan menambahkan rumus
 
 void main() {
-  List<BangunRuang> bangunRuang = []; // membuat list dari class Bangun Ruang (class utama)
-  bangunRuang.add(Balok(10, 20, 30)); // menambahkan di setiap class child dan input angka
+  List<BangunRuang> bangunRuang = []; // membuat penampung dengan list
+  bangunRuang.add(Balok(10, 20, 30)); // input angka
   bangunRuang.add(Kubus(0, 0, 0, 10));
 
-  for (var bangun in bangunRuang) { // membuat perulangan
-    bangun.volume(); // print hasil perhitungan volume dari kedua class child
+  for (var bangun in bangunRuang) { // menggunakan perulangan for
+    print(bangun.volume()); // print volume class balok dan kubus
   }
 }
 ```
@@ -77,52 +79,55 @@ void main() {
 
 ```dart
 class Matematika {
-  void hasil() {} // membuat method hasil, yg akan di akses nanti pada masing masing class child (sesuai soal)
-}
+  hasil() {
+    return 0;
+  }
+} // membuat method hasil() di class utama
 
 class KelipatanPersekutuanTerkecil implements Matematika {
-  int x; // membuat atribut/properties x dan y (sesuai soal)
+  int x; // membuat atribut di class child KPK
   int y;
 
-  KelipatanPersekutuanTerkecil(this.x, this.y); // membuat constructor this (yaitu atribut yg ada pada class itu sendiri)
+  KelipatanPersekutuanTerkecil(this.x, this.y); // membuat constructor dengan memanggil atribut
 
-  @override // harus menambahkan override wajib karna implement
-  void hasil() {
+  @override // wajib karna implement
+  hasil() {
     for (int hasil = x;; hasil++) {
       if (hasil % x == 0 && hasil % y == 0) {
-        print('KPK dari ${x} dan ${y} adalah ${hasil}');
-        break; // rumus dari KPK, dan saya print langsung
+        print('KPK dari ${x} dan ${y} :');
+        return hasil; // menggunakan return untuk mendapatkan (hasil) KPK
       }
     }
   }
 }
 
 class KelipatanPersekutuanTerbesar implements Matematika {
-  int x; // membuat atribut/properties x dan y (sesuai soal)
+  int x; // membuat atribut di class child FPB
   int y;
 
-  KelipatanPersekutuanTerbesar(this.x, this.y); // membuat constructor this (yaitu atribut yg ada pada class itu sendiri)
+  KelipatanPersekutuanTerbesar(this.x, this.y); // membuat constructor dengan memanggil atribut
 
   @override
-  void hasil() {
+  hasil() {
     for (int hasil = x; hasil > 0; hasil--) {
       if (x % hasil == 0 && x % hasil == 0) {
-        print('FPB dari ${x} dan ${y} adalah ${hasil}');
-        break; // rumus dari FPB, dan saya print langsung
+        print('FPB dari ${x} dan ${y} :');
+        return hasil; // menggunakan return untuk mendapatkan (hasil) FPB
       }
     }
   }
 }
 
 void main() {
-  List<Matematika> matematika = []; // membuat list dan mengambil dari class utama
-  matematika.add(KelipatanPersekutuanTerkecil(10, 30)); // input angka yg akan di hitung
-  matematika.add(KelipatanPersekutuanTerbesar(10, 30));
+  List<Matematika> matematika = []; // membuat penampung dengan list
+  matematika.add(KelipatanPersekutuanTerkecil(3, 5)); // menginputkan angka
+  matematika.add(KelipatanPersekutuanTerbesar(3, 5));
 
-  for (var operation in matematika) {
-    operation.hasil(); // output dari hasil KPK dan FPB
+  for (var operation in matematika) { // menggunakan perulangan for
+    print(operation.hasil()); // print hasil perhitungan kpk dan fpb
   }
 }
+
 ```
 
 ##### Output :

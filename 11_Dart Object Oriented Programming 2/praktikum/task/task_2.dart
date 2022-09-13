@@ -1,5 +1,7 @@
 class Matematika {
-  void hasil() {}
+  hasil() {
+    return 0;
+  }
 }
 
 class KelipatanPersekutuanTerkecil implements Matematika {
@@ -9,11 +11,11 @@ class KelipatanPersekutuanTerkecil implements Matematika {
   KelipatanPersekutuanTerkecil(this.x, this.y);
 
   @override // wajib karna implement
-  void hasil() {
+  hasil() {
     for (int hasil = x;; hasil++) {
       if (hasil % x == 0 && hasil % y == 0) {
-        print('KPK dari ${x} dan ${y} adalah ${hasil}');
-        break;
+        print('KPK dari ${x} dan ${y} :');
+        return hasil;
       }
     }
   }
@@ -26,11 +28,11 @@ class KelipatanPersekutuanTerbesar implements Matematika {
   KelipatanPersekutuanTerbesar(this.x, this.y);
 
   @override
-  void hasil() {
+  hasil() {
     for (int hasil = x; hasil > 0; hasil--) {
       if (x % hasil == 0 && x % hasil == 0) {
-        print('FPB dari ${x} dan ${y} adalah ${hasil}');
-        break;
+        print('FPB dari ${x} dan ${y} :');
+        return hasil;
       }
     }
   }
@@ -38,10 +40,10 @@ class KelipatanPersekutuanTerbesar implements Matematika {
 
 void main() {
   List<Matematika> matematika = [];
-  matematika.add(KelipatanPersekutuanTerkecil(10, 30));
-  matematika.add(KelipatanPersekutuanTerbesar(10, 30));
+  matematika.add(KelipatanPersekutuanTerkecil(3, 5));
+  matematika.add(KelipatanPersekutuanTerbesar(3, 5));
 
   for (var operation in matematika) {
-    operation.hasil();
+    print(operation.hasil());
   }
 }
