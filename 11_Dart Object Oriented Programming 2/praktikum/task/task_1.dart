@@ -2,9 +2,7 @@ class BangunRuang {
   double panjang, lebar, tinggi;
   BangunRuang(this.panjang, this.lebar, this.tinggi);
 
-  double volume() {
-    return 0;
-  }
+  void volume() {}
 }
 
 class Kubus extends BangunRuang {
@@ -12,8 +10,9 @@ class Kubus extends BangunRuang {
   Kubus(super.panjang, super.lebar, super.tinggi, this.sisi);
 
   @override
-  double volume() {
-    return sisi * sisi * sisi;
+  void volume() {
+    var hasil = sisi * sisi * sisi;
+    print('Volume Kubus dengan sisi ${sisi}cm adalah ${hasil}');
   }
 }
 
@@ -21,15 +20,19 @@ class Balok extends BangunRuang {
   Balok(super.panjang, super.lebar, super.tinggi);
 
   @override
-  double volume() {
-    return panjang * lebar * tinggi;
+  void volume() {
+    var hasil = panjang * lebar * tinggi;
+    print(
+        'Volume Balok dengan panjang ${panjang}cm lebar ${lebar}cm dan tinggi ${tinggi}cm adalah ${hasil}');
   }
 }
 
 void main() {
-  Kubus kubus = Kubus(0, 0, 0, 10);
-  print(kubus.volume());
+  List<BangunRuang> bangunRuang = [];
+  bangunRuang.add(Balok(10, 20, 30));
+  bangunRuang.add(Kubus(0, 0, 0, 10));
 
-  Balok balok = Balok(30, 20, 10);
-  print(balok.volume());
+  for (var bangun in bangunRuang) {
+    bangun.volume();
+  }
 }

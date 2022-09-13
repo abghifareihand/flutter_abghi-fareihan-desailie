@@ -1,5 +1,6 @@
 class Hewan {
-  String? nama, jenis;
+  String? nama;
+  String? jenis;
 
   Hewan(this.nama, this.jenis);
 
@@ -28,18 +29,19 @@ class Unggas extends Hewan {
 
   @override
   void suara() {
-    print('Unggas ${keluarga} Dengan Jenis ${jenis} Suaranya Pritt Pritt');
+    print('Belum diketahui');
   }
 }
 
-class Burung extends Hewan implements Unggas {
-  @override
-  String? keluarga;
-
-  Burung(super.nama, super.jenis);
+class Burung extends Unggas {
+  Burung(super.nama, super.jenis, super.keluarga);
 
   void terbang() {
     print('Burung Dengan Nama ${nama} Bisa Terbang Wush Wush Wush');
+  }
+
+  void suara() {
+    print('Burung Bernama ${nama} dan Jenis ${jenis} Suaranya Prit Prit');
   }
 }
 
@@ -48,9 +50,9 @@ void main() {
   kucing.suara();
   kucing.lari();
 
-  var unggas = Unggas('', 'Kakatua', 'Burung');
+  var unggas = Unggas('', '', 'Burung');
   unggas.suara();
 
-  var burung = Burung('Ocong', '');
+  var burung = Burung('Ocong', 'Kakatua', '');
   burung.terbang();
 }

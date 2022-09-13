@@ -8,7 +8,7 @@ class KelipatanPersekutuanTerkecil implements Matematika {
 
   KelipatanPersekutuanTerkecil(this.x, this.y);
 
-  @override
+  @override // wajib karna implement
   void hasil() {
     for (int hasil = x;; hasil++) {
       if (hasil % x == 0 && hasil % y == 0) {
@@ -37,9 +37,11 @@ class KelipatanPersekutuanTerbesar implements Matematika {
 }
 
 void main() {
-  var kpk = KelipatanPersekutuanTerkecil(6, 7);
-  kpk.hasil();
+  List<Matematika> matematika = [];
+  matematika.add(KelipatanPersekutuanTerkecil(10, 30));
+  matematika.add(KelipatanPersekutuanTerbesar(10, 30));
 
-  var fpb = KelipatanPersekutuanTerbesar(6, 7);
-  fpb.hasil();
+  for (var operation in matematika) {
+    operation.hasil();
+  }
 }
