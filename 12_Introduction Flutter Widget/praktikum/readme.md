@@ -76,7 +76,7 @@ class _MyAppState extends State<MyApp> {
 
 ![Test](../screenshots/ss_task_1.png)
 
-#### Task 01
+#### Task 02
 
 **Dari widget tersebut, pisahkan menjadi beberapa widget tanpa mengubah tampilannya**
 
