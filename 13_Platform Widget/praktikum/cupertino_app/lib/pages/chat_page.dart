@@ -8,8 +8,9 @@ class ChatPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [CupertinoListTile()],
+    return ListView.builder(
+      itemCount: chatsData.length,
+      itemBuilder: (context, index) => ChatCard(chat: chatsData[index]),
     );
   }
 }
