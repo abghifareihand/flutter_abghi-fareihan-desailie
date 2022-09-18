@@ -1,4 +1,4 @@
 class Hewan {
-  var beratHewan;
-  var namaHewan;
+  double beratHewan = 0;
+  String namaHewan = '';
 }

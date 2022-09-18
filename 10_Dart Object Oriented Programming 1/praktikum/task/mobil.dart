@@ -1,22 +1,26 @@
 import './hewan.dart';
 
 class Mobil {
-  var kapasitas = 1000; // kapasitas maximum muatan mobil
-  List muatan = []; // list data hewan yang menjadi muatan
-  var total = 0;
+  double kapasitas = 1000;
+  List<Hewan> muatan = [];
 
-  void tambahMuatan(int beratHewan, String namaHewan) {
-    if (kapasitas >= beratHewan) {
-      kapasitas = kapasitas - beratHewan;
-      total = total + beratHewan;
-      print('Menambahkan hewan $namaHewan dengan berat ${beratHewan}kg');
-      muatan.add('$namaHewan ${beratHewan}kg');
-      print('Isi muatan mobil : ${muatan}');
-      print('Total muatan mobil saat ini ${total} kg');
-      print('Sisa kapasitas mobil saat ini ${kapasitas}kg');
+  void tambahMuatan(Hewan hewan) {
+    if (kapasitas - hewan.beratHewan >= 0) {
+      kapasitas -= hewan.beratHewan;
+      muatan.add(hewan);
+      print('Isi Muatan Mobil : ${hewan.namaHewan} ${hewan.beratHewan}kg. ');
     } else {
-      print('Muatan melebihi kapasitas mobil karna sisa kapasitas cuman ${kapasitas}kg');
-      print('Sedangkan hewan yang ditambahkan yaitu $namaHewan punya kapasitas ${beratHewan}kg');
-    } 
+      print(
+          'Maaf muatan melebihi kapasitas, tidak bisa menambahkan ${hewan.namaHewan} Karena Beratnya ${hewan.beratHewan}kg');
+      print('Sedangkan kapasitas mobil tersisa ${kapasitas}kg.');
+    }
+  }
+
+  void totalMuatan() {
+    double totalBerat = 0;
+    for (Hewan hewan in muatan) {
+      totalBerat += hewan.beratHewan;
+    }
+    print('Total Berat Hewan di Dalam Mobil : ${totalBerat}kg.');
   }
 }
