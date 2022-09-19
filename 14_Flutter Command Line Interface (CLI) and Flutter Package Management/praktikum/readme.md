@@ -42,6 +42,7 @@ Menambahkan package badges:
 
 dan import di file :
 `import 'package:badges/badges.dart';`
+
 ![Test](../screenshots/ss_package.png)
 
 **Source Code Task 1**
@@ -97,6 +98,7 @@ class SatuPage extends StatelessWidget {
 ```
 
 **Output Task 1**
+
 ![Test](../screenshots//ss_task_1.png)
 
 <br>
@@ -112,6 +114,7 @@ Menambahkan package barcode:
 
 dan import di file :
 `import 'package:barcode_widget/barcode_widget.dart';`
+
 ![Test](../screenshots/ss_package.png)
 
 **Source Code Task 2**
@@ -178,4 +181,5 @@ class MyBarcode extends StatelessWidget { // saya membuat Widget MyBarcode() aga
 ```
 
 **Output Task 2**
+
 ![Test](../screenshots//ss_task_2.png)
