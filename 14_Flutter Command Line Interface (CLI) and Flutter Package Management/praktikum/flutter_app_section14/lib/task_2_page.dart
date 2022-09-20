@@ -14,14 +14,8 @@ class DuaPage extends StatelessWidget {
             MyBarcode(
               textBarcode: 'Alterra Academy',
             ),
-            SizedBox(
-              height: 26,
-            ),
             MyBarcode(
               textBarcode: 'Flutter Asik',
-            ),
-            SizedBox(
-              height: 26,
             ),
             MyBarcode(
               textBarcode: 'Abghi Fareihan Desailie',
@@ -47,6 +41,10 @@ class MyBarcode extends StatelessWidget {
       padding: EdgeInsets.all(16),
       decoration: const BoxDecoration(
         color: Colors.grey,
+      ),
+      margin: EdgeInsets.only(
+        top: 10,
+        bottom: 10,
       ),
       child: BarcodeWidget(
         barcode: Barcode.code128(),
