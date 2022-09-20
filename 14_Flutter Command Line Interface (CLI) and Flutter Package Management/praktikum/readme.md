@@ -122,32 +122,27 @@ dan import di file :
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:barcode_widget/barcode_widget.dart'; // import package barcode
+import 'package:barcode_widget/barcode_widget.dart';
+// mengimport package dari barcode widget
 
 class DuaPage extends StatelessWidget {
   const DuaPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+    return Scaffold( // membuat scaffold atau halaman
+      body: Center( // lalu body di bungkus dengan widget center
+        child: Column( // membuat column
+          mainAxisAlignment: MainAxisAlignment.center, // agar barcode ada di tengah
           children: const [
             MyBarcode(
-              textBarcode: 'Alterra Academy', // memanggil textBarcode dan isi datanya
-            ),
-            SizedBox(
-              height: 26,
+              textBarcode: 'Alterra Academy',
+            ), // memanggil dari data textBarcode, dari widget MyBarcode() yang telah dibuat di bawah
+            MyBarcode(
+              textBarcode: 'Flutter Asik',
             ),
             MyBarcode(
-              textBarcode: 'Flutter Asik', // memanggil textBarcode dan isi datanya
-            ),
-            SizedBox(
-              height: 26,
-            ),
-            MyBarcode(
-              textBarcode: 'Abghi Fareihan Desailie', // memanggil textBarcode dan isi datanya
+              textBarcode: 'Abghi Fareihan Desailie',
             ),
           ],
         ),
@@ -156,9 +151,9 @@ class DuaPage extends StatelessWidget {
   }
 }
 
-class MyBarcode extends StatelessWidget { // saya membuat Widget MyBarcode() agar bisa menambahkan barcode dengan 1 widget dan hanya mengubah data (text nya saja)
-  final String textBarcode; // inisiasi textBarcode
-
+class MyBarcode extends StatelessWidget { // membuat widget MyBarcode() Fungsinya agar hanya sekali saja membuat widget barcode, dan bisa dipakai berkali kali
+  final String textBarcode;
+  // membuat string textBarcode, agar nantinya akan di isi dengan data barcode
   const MyBarcode({
     Key? key,
     required this.textBarcode,
@@ -171,9 +166,13 @@ class MyBarcode extends StatelessWidget { // saya membuat Widget MyBarcode() aga
       decoration: const BoxDecoration(
         color: Colors.grey,
       ),
+      margin: EdgeInsets.only( // memberi margin pada masing masing barcode
+        top: 10,
+        bottom: 10,
+      ),
       child: BarcodeWidget(
         barcode: Barcode.code128(),
-        data: textBarcode, // menambahkan textBarcode ke dalam data barcode
+        data: textBarcode,
         width: 200,
       ),
     );
