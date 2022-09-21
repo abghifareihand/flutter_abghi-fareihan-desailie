@@ -266,3 +266,6 @@ final List<IconData> dataIcons = [ // membuat list icon dari IconData (materialA
 **Output GridView :**
 
 ![Test](../screenshots/ss_task_2.png)
+
+**Record :**
+![record](https://user-images.githubusercontent.com/97160284/191564779-29899485-fe7c-4446-9e23-6a7d5bf207fd.gif)
