@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+
+final List<IconData> dataIcons = [
+  Icons.android,
+  Icons.apple,
+  Icons.camera,
+  Icons.wifi,
+  Icons.whatsapp,
+  Icons.email,
+  Icons.browser_updated,
+  Icons.add_task,
+  Icons.add_to_drive_rounded,
+  Icons.add_a_photo,
+  Icons.add_alarm,
+  Icons.add_alert,
+  Icons.airplanemode_active,
+  Icons.anchor,
+  Icons.bike_scooter,
+  Icons.car_crash,
+  Icons.cabin,
+  Icons.male,
+  Icons.female,
+  Icons.wallet,
+  Icons.settings,
+  Icons.phone,
+  Icons.archive,
+  Icons.bluetooth,
+];
