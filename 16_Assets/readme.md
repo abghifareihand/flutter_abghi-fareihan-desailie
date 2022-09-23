@@ -40,7 +40,7 @@ assets:
 - Flutter mendukung format gambar seperti JPEG, WebP, GIF, Animated Web/GIF, PNG, BMP dan WBMP
 - Menampilkan gambar dari project asset dan internet
 
-**Loading Images**
+**Loading Images 1**
 
 - Gunakan widget Image
 - Membutuhkan properti image dengan nilai class AssetImage()
@@ -48,6 +48,8 @@ assets:
 ![Test](screenshots/ss_load.png)
 
 <br>
+
+**Loading Images 2**
 
 - Menggunakan method Image.asset, mendapatkan image yang sudah ditambahkan dalam project.
 - Menggunakan method Image.network, mendapatkan data image melalui internet dengan menggunakan string url nya
