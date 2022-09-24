@@ -9,6 +9,7 @@
 ## Task Weekly
 
 Saya membuat folder dan file di dalam folder `lib` :
+
 ![Test](screenshots//ss_lib.png)
 
 <br>
@@ -57,6 +58,7 @@ Welcome section (terdapat gambar dan kata-kata) :
 Isi dari `widgets/header_widget.dart`
 
 ![Test](screenshots/ss_welcome.png)
+
 Code :
 
 ```dart
