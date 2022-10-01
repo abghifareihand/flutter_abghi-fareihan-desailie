@@ -25,7 +25,7 @@ class GalleryScreen extends StatelessWidget {
             mainAxisSpacing: 8,
           ),
           itemBuilder: (context, index) {
-            final galeri = dataGallery.elementAt(index);
+            final galeri = dataGallery[index];
             return InkWell(
               onTap: () {
                 showModalBottomSheet(
