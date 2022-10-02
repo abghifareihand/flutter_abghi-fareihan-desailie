@@ -12,7 +12,7 @@ class ContactScreen extends StatelessWidget {
       backgroundColor: const Color(0xFF1F1D2B),
       appBar: AppBar(
         backgroundColor: const Color(0xFF1F1D2B),
-        title: const Text('Data Contact'),
+        title: const Text('Data User'),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {
