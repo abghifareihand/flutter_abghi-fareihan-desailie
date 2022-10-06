@@ -1,16 +1,41 @@
-# flutter_shop_cart_bloc
+# Readme Flutter Shop Cart BLoC
 
-A new Flutter project.
+Menambahkan fungsi delete pada cart bloc untuk menghapus item
 
-## Getting Started
+```dart
+class CartBloc extends Bloc<CartEvent, CartState> {
+  CartBloc() : super(const CartInitial([])) {
+    on<AddProduct>((event, emit) {
+      var existingCart = [...state.items];
+      existingCart.add(event.product);
+      emit(CartInitial(existingCart));
+    });
+    on<DeleteProduct>((event, emit) {
+      var existingCart = [...state.items];
+      existingCart.remove(event.product);
+      emit(CartInitial(existingCart));
+    });
+  }
+}
+```
 
-This project is a starting point for a Flutter application.
+<br>
+<br>
 
-A few resources to get you started if this is your first Flutter project:
+Lalu pada bagian Cart Page, pada icon delete akan memiliki fungsi untuk menghapus list
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+IconButton(
+                onPressed: () {
+                context.read<CartBloc>().add(
+                        DeleteProduct(item),
+                    );
+                ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                    content: Text('${item.name} deleted.'),
+                    ),
+                );
+                },
+                icon: const Icon(Icons.delete),
+            ),
+```
