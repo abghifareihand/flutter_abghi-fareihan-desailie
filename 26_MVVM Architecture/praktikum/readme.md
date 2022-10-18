@@ -128,7 +128,7 @@ Di dalam folder screens terdapat folder home dan user. Folder home terdiri dari 
 
 <br>
 
-`home_view_model.dart` berisi code untuk state management provider :
+`home_view_model.dart` berisi method atu fungsi untuk berinteraksi, ada beberapa method tambahan untuk menjawab soal :
 
 ```dart
 class HomeViewModel with ChangeNotifier {
@@ -142,32 +142,32 @@ class HomeViewModel with ChangeNotifier {
     final response = await UserAPI().fetchUser();
     _result = response.toString();
     notifyListeners();
-  }
+  } // mengambil data
 
   createUser(String name, String job) async {
     final response = await UserAPI().createUser(name: name, job: job);
     _result = response.toString();
     notifyListeners();
-  }
+  } // membuat data baru
 
   updateUser(String name, String job) async {
     final response = await UserAPI().createUser(name: name, job: job);
     _result = response.toString();
     notifyListeners();
-  }
+  } // update data
 
   deleteUser() async {
     final response = await UserAPI().deleteUser();
     _result = response.toString();
     notifyListeners();
-  }
+  } // menghapus data
 
   getUsers() async {
     final response = await UserAPI().fetchData();
     _user = response;
     notifyListeners();
   }
-}
+} // output data dengan objek
 ```
 
 <br>
